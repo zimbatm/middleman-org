@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.license = 'MIT'
   # The version of middleman-core your extension depends on
-  s.add_runtime_dependency('middleman-core', ['~> 3.3'])
+  s.add_runtime_dependency('middleman-core', ['~> 4'])
 
   # Additional dependencies
   s.add_runtime_dependency('org-ruby', '~> 0.9.12')

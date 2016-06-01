@@ -15,8 +15,11 @@ module Middleman
       require 'org-ruby'
       ::Tilt.prefer(Tilt::OrgTemplate, 'org')
 
-      app.after_configuration do
+      app.before_configuration do
         template_extensions org: :html
+      end
+
+      app.after_configuration do
         if config[:org_engine] == :emacs_ruby
           require 'emacs-ruby'
           ::Tilt.prefer(Tilt::EmacsRuby::OrgTemplate, 'org')
